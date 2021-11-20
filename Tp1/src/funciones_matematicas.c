@@ -13,7 +13,7 @@ float Sumar (float a, float b){
 
 	float resultado;
 
-	resultado=a+b;
+	resultado=(a)+(b);
 
 	return resultado;
 }
@@ -22,7 +22,7 @@ float Restar (float operando1, float operando2){
 
 	float resultado;
 
-	resultado=operando1-operando2;
+	resultado=(operando1)-(operando2);
 
 	return resultado;
 
@@ -31,13 +31,14 @@ int Dividir (float operando1, float operando2, float* pResultado){
 
 
 	float resultado;
-	int error=1;
+	int error;
 
 	if(pResultado!=NULL && operando2!=0){
 
-	resultado=operando1/operando2;
+	resultado=(operando1)/(operando2);
+	*pResultado=resultado;
+	error=1;
 
-	(*pResultado)=resultado;
 	}else{
 
 		error=0;
@@ -48,7 +49,7 @@ float Multiplicar (float operando1, float operando2){
 
 	float resultado;
 
-	resultado=operando1*operando2;
+	resultado=(operando1) * (operando2);
 
 	return resultado;
 
@@ -56,7 +57,7 @@ float Multiplicar (float operando1, float operando2){
 
 int CalcularFactorial (int numeroIngresado){
 
-	int factorial;
+	long int factorial;
 
 	if(numeroIngresado==1){
 

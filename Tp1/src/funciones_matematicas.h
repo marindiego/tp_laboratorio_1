@@ -33,4 +33,6 @@ int ValidarEntero (float numeroIngresado);
 
 
 
+
+
 #endif /* FUNCIONES_MATEMATICAS_H_ */
